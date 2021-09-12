@@ -6,7 +6,8 @@ import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 
 /* Screens Stack */
-import CoinsScreen from './CoinsScreen';
+import Coins from './Screens/Coins';
+import CoinDetail from './Screens/CoinDetail';
 
 const CoinsStack = () => {
   /* Initializations */
@@ -14,7 +15,8 @@ const CoinsStack = () => {
 
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Coins" component={CoinsScreen} />
+      <Stack.Screen name="Coins" component={Coins} />
+      <Stack.Screen name="Coin Detail" component={CoinDetail} />
     </Stack.Navigator>
   );
 };
