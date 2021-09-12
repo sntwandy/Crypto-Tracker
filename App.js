@@ -4,12 +4,13 @@
 
 import React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
+import CoinsStack from './src/components/coins/CoinsStack';
 
 const App = () => {
   return (
     <>
       <NavigationContainer>
-        <h1>Hello World</h1>
+        <CoinsStack />
       </NavigationContainer>
     </>
   );
